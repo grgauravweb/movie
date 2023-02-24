@@ -1,35 +1,93 @@
-h1 { text-align: center; }
-
-#carousel {
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    display:flex;
+section {
+  width: 100%;
 }
-::-webkit-scrollbar:horizontal{
-  height: 8px;
-  background-color: red;
+.outer-wrapper {
+  max-width: 100vw;
+  overflow-x: scroll;
+  position: relative;
+  scrollbar-color: #000000 #000000;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
 }
-::-webkit-scrollbar-thumb:horizontal{
-        background: #000;
-        border-radius: 10px;
-        
-    }
 
-/* #carousel::-webkit-scrollbar { */
-  /* display: none; Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
-  /* -webkit-overflow-scrolling: touch; On touch screens the content continues to scroll for a while after finishing the scroll gesture */
-/* } */
+.pseduo-track {
+  background-color: #000000;
+  height: 2px;
+  width: 100%;
+  position: relative;
+  top: -3px;
+  z-index: -10;
+}
 
-.item {
-  min-width: 300px;
-  min-height: 20vh;
-  margin: 15px;
+@media (any-hover: none) {
+  .pseduo-track {
+    display: none;
+  }
+}
 
-  font-size: 5em;
-  text-align: center;
-  line-height: 300px;
-  background-color: #FFF9EF;
-  border-radius: 7px;
+.outer-wrapper::-webkit-scrollbar {
+  height: 5px;
+}
+
+.outer-wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+}
+
+.outer-wrapper::-webkit-scrollbar-thumb {
+  height: 5px;
+  background-color: #000000;
+}
+
+.outer-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #f1db9d;
+}
+
+.outer-wrapper::-webkit-scrollbar:vertical {
+  display: none;
+}
+
+.inner-wrapper {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.pseudo-item {
+  /* height: 437px; */
+  width: 297px;
+  margin-right: 59px;
+  flex-shrink: 0;
+  background-color: #ffffff;
+}
+.pseudo-item img{
+  cursor: pointer;
+  width: 297px;
+  height: 437px;
+  outline: none;
+}
+.pseudo-item:nth-of-type(2n) {
+  background-color: #ffffff;
+}
+.movie-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+.scripted-television{
+  background-color: #000000;
+  color: #ffffff;
+  margin-top:100px;
+}
+.scripted-television .pseudo-item{
+  background-color: #000000;
+}
+.scripted-television .pseudo-item:nth-of-type(2n) {
+  background-color: #000000;
+}
+.scripted-television .pseduo-track{
+  background-color: #ffffff;
+}
+.scripted-television ::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+}
+.scripted-television ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgb(255, 255, 255);
 }
