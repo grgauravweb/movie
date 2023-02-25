@@ -1,3 +1,6 @@
+html {
+  background: #dedbdb;
+}
 section {
   width: 100%;
 }
@@ -16,25 +19,20 @@ section {
   width: 100%;
   position: relative;
   top: -3px;
-  z-index: -10;
+  z-index: 0;
 }
-/* footer */
-
 #fthead{
-   text-align: center;
+  text-align: center;
 }
 .content{
-    margin: 20px 0;
-    text-align: justify;
+   margin: 20px 0;
+   text-align: justify;
 }
 .container-fluid h4{
-    color: darkgray;
-    font-weight: 500;
-    text-decoration: underline;
+   color: darkgray;
+   font-weight: 500;
+   text-decoration: underline;
 }
-
-/* end footer */
-
 @media (any-hover: none) {
   .pseduo-track {
     display: none;
@@ -73,12 +71,46 @@ section {
   margin-right: 59px;
   flex-shrink: 0;
   background-color: #ffffff;
+  transition: transform .2s;
+}
+.pseudo-item:hover{
+  transform: scale(1.1);
 }
 .pseudo-item img{
   cursor: pointer;
   width: 297px;
   height: 437px;
   outline: none;
+}
+.unscripted-television{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgb(255, 255, 255)), url(https://main.net955305.contentfabric.io/qlibs/ilib4DMK5xuzb8EjoJN95dEMsxsVzfK2/q/iq__q3fFpuA9yn8fkqtRDVxBLofjM4W/meta/public/asset_metadata/titles/0/ugliest-house-in-america/images/slider_background_desktop/default?authorization=eyJxc3BhY2VfaWQiOiJpc3BjMlJVb1JlOWVSMnYzM0hBUlFVVlNwMXJZWHp3MSIsImFkZHIiOiIweGZhNTM5Yzg0ODY5MWVjMmYwN2U3ZWFkNDBkZmJkN2RlZTZjZTZlMDQiLCJxbGliX2lkIjoiaWxpYjM2OTFMZWNEaDl5TnlxS0hwd1h0bWVqOGtTNHYifQ==.RVMyNTZLX1A4TEx2VGRUV0pvZnppNlJoN0ExQ2g1aWZaUnVoY2RrWG5UWExGUkFWWFFXZmlDVDc2c2hQR3dTSkVFWXg3MmNoSDNKc3RGcFIzNkpyM2laUmoydlZnSGFq);
+}
+.unscripted-television img{
+  width: 402px;
+  height: 245px;
+}
+.unscripted-television .pseudo-item{
+  width: 402px;
+  height: 276px;
+}
+.featured-podcasts img{
+  width: 402px;
+  height: 402px;
+}
+.featured-podcasts .pseudo-item{
+  width: 402px;
+  height:445px;
+}
+.featured-franchises .card{
+  background-color: #00000000;
+}
+.production-companies .pseudo-item{
+  width: 189px;
+}
+.production-companies .pseudo-item img{
+  width: 140px;
+  height: auto;
+  border: 1px solid;
 }
 .pseudo-item:nth-of-type(2n) {
   background-color: #ffffff;
