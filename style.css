@@ -18,6 +18,22 @@ section {
   top: -3px;
   z-index: -10;
 }
+/* footer */
+
+#fthead{
+   text-align: center;
+}
+.content{
+    margin: 20px 0;
+    text-align: justify;
+}
+.container-fluid h4{
+    color: darkgray;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* end footer */
 
 @media (any-hover: none) {
   .pseduo-track {
