@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background: none;
+    position: fixed;
+    z-index: 997;;
+}
+label.logo{
+    padding: 0 100px;
+    line-height: 80px;
+    padding: 20px 1px 0px 50px;
+    float: left;
+}
+nav ul{
+    float: left;
+    margin-left: 10px;
+   
+}
+nav li{
+    display: inline-block;
+    margin:15px 30px;
+    line-height: 80px;
+    margin-left:50px ;
+}
+.socialmedia{
+    margin: 0 10px;
+}
+
+nav a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav #icon{
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 30px; 
+    cursor: pointer;
+    display: none;
+}
+.mgm-20{
+    margin-top:-10px;
+}
+
+/* footer */
+
+#fthead{
+   text-align: center;
+}
+.content{
+    margin: 20px 0;
+    text-align: justify;
+}
+.container-fluid h4{
+    color: darkgray;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+/* end footer */
+
+#topbanner{
+    background:linear-gradient(transparent,rgba(0,0,0,.8901960784313725),#000), url(https://main.net955305.contentfabric.io/q/iq__3Tp3ggVm1Y43taweERAwJENA8maV/meta/public/asset_metadata/images/title_detail_hero_desktop/default?authorization=eyJxc3BhY2VfaWQiOiJpc3BjMlJVb1JlOWVSMnYzM0hBUlFVVlNwMXJZWHp3MSIsImFkZHIiOiIweGZhNTM5Yzg0ODY5MWVjMmYwN2U3ZWFkNDBkZmJkN2RlZTZjZTZlMDQiLCJxbGliX2lkIjoiaWxpYjM2OTFMZWNEaDl5TnlxS0hwd1h0bWVqOGtTNHYifQ==.RVMyNTZLX1A4TEx2VGRUV0pvZnppNlJoN0ExQ2g1aWZaUnVoY2RrWG5UWExGUkFWWFFXZmlDVDc2c2hQR3dTSkVFWXg3MmNoSDNKc3RGcFIzNkpyM2laUmoydlZnSGFq);
+    width: 100%;
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#overimg{
+    height: 150px;
+    width: 150px;
+    margin-top:400px;
+    margin-left: 30px;
+}
+#overbutton{
+    border: 2px solid #d7bb73;
+    background-color: yellow;
+    height: 52px;
+    width: 204px;
+    text-align: center;
+    padding: 0; 
+    color: #000;
+    font-weight: 700;
+    margin: 20px 20px;
+}
+#sectionb p{
+    text-align: justify;
+    font-family: sans-serif;
+}
+#sectionb{
+    padding: 100px;
+    background-color: #000;
+}
+#sectionb .col-md-4{
+    padding: 20px;
+}
+
+#sec1{
+    border-bottom:2px solid #fff;
+    color:#fff;
+    letter-spacing: .90px;
+    padding: 15px;
+}
+#sec2{
+    border-bottom:2px solid #fff; 
+    margin-top: 20px;
+    padding: 15px;
+    color: #fff;
+}
+#sec3{
+    border-bottom:2px solid #fff; 
+    margin-top: 20px;
+    padding: 15px;
+    color: #fff;
+}
+#videosec{
+    margin-top: 20px;
+    padding: 20px;
+}
+#videosec h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: red;
+    font-weight:700;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+#videosec .video{
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+}
+#videosec address{
+    text-align: justify;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+
+@media(max-width: 1200px)
+{
+    lable.logo{
+        font-size:32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 5px;
+    }
+   nav a{
+    font-size: 17px;
+    }
+   
+    nav li{
+        display: inline-block;
+        margin:10px 10px;
+        line-height: 80px;
+        margin-left:30px ;
+    }
+    .socialmedia{
+        margin: 0 10px;
+    }
+    #sectionb{
+        padding: 40px;
+        background-color: #000;
+    }
+
+}
+@media(max-width: 990px)
+{
+    nav #icon{
+        display: block;
+        color: #fff;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: black;
+        top:80px;
+        left:-150%;
+        text-align:center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    .socialmedia{
+        margin: 0 0px;
+    }
+    nav ul li a{
+        color: #fff;
+        font-size:20px ;
+    }
+   
+    nav ul.show 
+    {
+        left: 0;
+    }
+    #sectionb{
+        padding: 20px;
+        background-color: #000;
+    }
+    #sectionb .col-md-4{
+        padding: 5px;
+    }
+
+}
