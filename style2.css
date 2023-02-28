@@ -7,7 +7,7 @@ nav{
     height: 80px;
     width: 100%;
     background: none;
-    position: fixed;
+    position: absolute;
     z-index: 997;;
 }
 label.logo{
